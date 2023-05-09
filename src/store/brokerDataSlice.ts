@@ -10,4 +10,8 @@ export const brokerDataSlice = createSlice({
     name: "brokerData",
     initialState,
     reducers: {},
-})
+});
+
+export const {} = brokerDataSlice.actions;
+
+export default brokerDataSlice.reducer;

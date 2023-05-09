@@ -1,17 +1,9 @@
-export type Broker = {
-    id: number
-    name: string
-    logoUrl: string
-    linkUrl: string
-    score: number
-    isForex?: boolean
-    isStock?: boolean
-}
-
 /**
  * This is just for the sake of simplicity.
  */
-export const exampleBrokerData: Broker[] = [
+import {IBroker} from "../types/broker.type";
+
+export const exampleBrokerData: ReadonlyArray<IBroker> = [
     {
         "id": 5,
         "name": "Interactive Brokers",
@@ -137,4 +129,4 @@ export const exampleBrokerData: Broker[] = [
         "score": 4.9,
         isStock: true,
     }
-]
+] as const
