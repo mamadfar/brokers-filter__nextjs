@@ -1,17 +1,15 @@
-import {Provider} from "react-redux";
-import {useMemo} from "react";
-import {makeStore} from "../redux/store";
+import Head from "next/head";
 
 export default function Home() {
-    const store = useMemo(() => {
-        return makeStore()
-    }, []);
-
     return (
-        <Provider store={store}>
-            <h1 className="text-3xl font-bold underline">
-                Hello world!
-            </h1>
-        </Provider>
+        <>
+            <Head>
+                <title>BrokerChooser | Brokers</title>
+            </Head>
+            <div className="grid md:grid-cols-2">
+                <div>left</div>
+                <div>right</div>
+            </div>
+        </>
     )
 }
