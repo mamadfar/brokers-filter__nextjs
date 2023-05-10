@@ -1,0 +1,6 @@
+.search {
+  @apply w-full py-1 px-2 mb-8 border border-gray-400 rounded-[3px] placeholder:text-sm placeholder:text-gray-300 focus:outline-none focus:shadow-md transition delay-100;
+  &::-webkit-search-cancel-button {
+    cursor: pointer;
+  }
+}

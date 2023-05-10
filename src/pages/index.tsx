@@ -1,4 +1,5 @@
 import Head from "next/head";
+import {Brokers, TopBrokers} from "../components";
 
 export default function Home() {
     return (
@@ -7,8 +8,8 @@ export default function Home() {
                 <title>BrokerChooser | Brokers</title>
             </Head>
             <div className="grid md:grid-cols-2">
-                <div>left</div>
-                <div>right</div>
+                <Brokers/>
+                <TopBrokers/>
             </div>
         </>
     )
